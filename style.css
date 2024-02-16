@@ -1,0 +1,95 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.lottery, .history {
+    flex: 1;
+    margin: 10px;
+}
+.history table {
+    width: auto; /* 使表格寬度自適應容器 */
+    min-width: 300px; /* 可以根據需要調整，確保表格在容器過小時仍具有最小可讀寬度 */
+    border-collapse: collapse;
+}
+
+.history th, .history td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.history th {
+    background-color: #f2f2f2;
+}
+
+.lotto-number {
+    display: inline-block;
+    width: 35px; /* 或根據需要調整大小 */
+    height: 35px; /* 使其成為圓形，寬高相等 */
+    background-color: yellow;
+    background-image: radial-gradient(circle at 35%, #ffff00, #ffdf00 65%, #cca700); /* 添加漸變效果來模擬光照和深度 */
+    color: black;
+    text-align: center;
+    line-height: 35px; /* 調整這個值使文字垂直居中 */
+    border-radius: 50%; /* 這將使元素呈現圓形 */
+    margin: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #888888; /* 添加陰影來增強立體感 */
+    border: 1px solid #ffdf00; /* 輕微的邊框可以增加細節 */
+}
+
+.mystery-number {
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    width: 40px; /* 或根據需要調整大小 */
+    height: 40px; /* 使其成為圓形，寬高相等 */
+    background-color: #4CAF50; /* 綠色背景 */
+    background-image: radial-gradient(circle at 35%, #4CAF50, #388E3C 65%, #348f3a); /* 添加漸變效果來模擬光照和深度 */
+    color: white; /* 文字顏色 */
+    text-align: center;
+    line-height: 40px; /* 調整這個值使文字垂直居中 */
+    border-radius: 50%; /* 這將使元素呈現圓形 */
+    box-shadow: 0 0 8px #666666; /* 添加陰影來增強立體感 */
+    user-select: none; /* 防止選取問號文字 */
+}
+
+.special-number {
+    display: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.special-lotto-number {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    background-color: #4CAF50; /* 綠色背景 */
+    background-image: radial-gradient(circle at 30%, #4CAF50, #388E3C 70%, #1B5E20); /* 添加漸變效果來模擬光照和深度 */
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #666666; /* 添加陰影來增強立體感 */
+    user-select: none;
+    margin: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>樂透抽球</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lottery">
+            <h1>樂透抽球</h1>
+            <label for="maxNumbers">抽取數量:</label>
+            <input type="number" id="maxNumbers" value="6" min="1" max="10">
+            <label for="maxMysteryNumbers">特別號數量:</label>
+            <input type="number" id="maxMysteryNumbers" value="0" min="0" max="5">
+            <label for="numberRange">數字範圍:</label>
+            <input type="number" id="numberRange" value="49" min="10" max="99">
+            <button id="drawButton">抽取數字</button>
+            <button id="clearHistory">清除歷史</button>
+            <div id="results"></div>
+        </div>
+        <div class="history">
+            <h2>開獎歷史</h2>
+            <div id="history"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
