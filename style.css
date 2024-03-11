@@ -1,3 +1,86 @@
+body {
+    margin: 0;
+    font-family: "Lato", "PingFang TC", "Helvetica Neue", Helvetica, "微軟正黑體", "新細明體", Arial, sans-serif;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa; /* 淺灰背景色 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 50px; /* 設置一個固定的高度 */
+    margin-bottom: 25px;
+}
+
+.social-link {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none; /* 移除底線 */
+}
+
+.social-link img {
+    width: 30px; /* LOGO大小 */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.1); /* 懸停時放大LOGO */
+}
+
+.social-link span {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    color: #007bff; /* 文字顏色 */
+    white-space: nowrap; /* 避免文字換行 */
+}
+
+.social-link:hover span {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.contact-message {
+    font-size: 20px;
+    color: #000;
+    background-color: #e3f3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px; /* 兩側的padding */
+    height: 100%; /* 高度設為100%以填滿.top-bar的高度 */
+}
+
+.extra-links {
+    margin-right: 20px;
+    margin-left: auto; /* 將額外連結推向右側 */
+    display: flex;
+    align-items: center;
+}
+
+.extra-links a {
+    text-decoration: none;
+    color: #007bff; /* 設定連結顏色 */
+    margin-left: 15px; /* 設定連結間距 */
+    transition: color 0.3s ease-in-out;
+}
+
+.extra-links a:hover {
+    color: #0056b3; /* 鼠標懸停時的顏色 */
+}
+
+.social-link, .extra-links {
+    display: flex;
+    align-items: center;
+    height: 100%; /* 確保填滿.top-bar的高度 */
+}
 table {
     width: 100%;
     border-collapse: collapse;
